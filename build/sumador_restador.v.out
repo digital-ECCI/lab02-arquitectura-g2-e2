@@ -1,0 +1,65 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_0000023dc5d1bc70 .scope module, "sumador_restador" "sumador_restador" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /INPUT 1 "Sel";
+    .port_info 3 /OUTPUT 4 "Resultado";
+    .port_info 4 /OUTPUT 1 "Cout";
+o0000023dc5d67088 .functor BUFZ 1, C4<z>; HiZ drive
+L_0000023dc5d1bb90 .functor XOR 1, L_0000023dc5d63940, o0000023dc5d67088, C4<0>, C4<0>;
+L_0000023dc5d17000 .functor XOR 1, L_0000023dc5d64160, o0000023dc5d67088, C4<0>, C4<0>;
+L_0000023dc5d645b0 .functor XOR 1, L_0000023dc5d63bc0, o0000023dc5d67088, C4<0>, C4<0>;
+L_0000023dc5dab6a0 .functor XOR 1, L_0000023dc5d63c60, o0000023dc5d67088, C4<0>, C4<0>;
+o0000023dc5d66f98 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023dc5d16940_0 .net "A", 3 0, o0000023dc5d66f98;  0 drivers
+o0000023dc5d66fc8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023dc5d16550_0 .net "B", 3 0, o0000023dc5d66fc8;  0 drivers
+v0000023dc5d1be00_0 .net "B_xor", 3 0, L_0000023dc5d639e0;  1 drivers
+v0000023dc5d1bea0_0 .net "Cout", 0 0, L_0000023dc5d63620;  1 drivers
+v0000023dc5d1bf40_0 .net "Resultado", 3 0, L_0000023dc5d63d00;  1 drivers
+v0000023dc5d63350_0 .net "Sel", 0 0, o0000023dc5d67088;  0 drivers
+v0000023dc5d633f0_0 .net *"_ivl_10", 0 0, L_0000023dc5d17000;  1 drivers
+v0000023dc5d643e0_0 .net *"_ivl_15", 0 0, L_0000023dc5d63bc0;  1 drivers
+v0000023dc5d638a0_0 .net *"_ivl_16", 0 0, L_0000023dc5d645b0;  1 drivers
+v0000023dc5d64200_0 .net *"_ivl_22", 0 0, L_0000023dc5d63c60;  1 drivers
+v0000023dc5d636c0_0 .net *"_ivl_23", 0 0, L_0000023dc5dab6a0;  1 drivers
+v0000023dc5d63f80_0 .net *"_ivl_28", 4 0, L_0000023dc5d63da0;  1 drivers
+v0000023dc5d63e40_0 .net *"_ivl_3", 0 0, L_0000023dc5d63940;  1 drivers
+L_0000023dc5dab848 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000023dc5d63a80_0 .net *"_ivl_31", 0 0, L_0000023dc5dab848;  1 drivers
+v0000023dc5d634e0_0 .net *"_ivl_32", 4 0, L_0000023dc5d63ee0;  1 drivers
+L_0000023dc5dab890 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0000023dc5d64340_0 .net *"_ivl_35", 0 0, L_0000023dc5dab890;  1 drivers
+v0000023dc5d63b20_0 .net *"_ivl_36", 4 0, L_0000023dc5d64020;  1 drivers
+v0000023dc5d63760_0 .net *"_ivl_38", 4 0, L_0000023dc5df5560;  1 drivers
+v0000023dc5d642a0_0 .net *"_ivl_4", 0 0, L_0000023dc5d1bb90;  1 drivers
+L_0000023dc5dab8d8 .functor BUFT 1, C4<0000>, C4<0>, C4<0>, C4<0>;
+v0000023dc5d640c0_0 .net *"_ivl_41", 3 0, L_0000023dc5dab8d8;  1 drivers
+v0000023dc5d63800_0 .net *"_ivl_42", 4 0, L_0000023dc5df4200;  1 drivers
+v0000023dc5d63580_0 .net *"_ivl_9", 0 0, L_0000023dc5d64160;  1 drivers
+L_0000023dc5d63940 .part o0000023dc5d66fc8, 0, 1;
+L_0000023dc5d64160 .part o0000023dc5d66fc8, 1, 1;
+L_0000023dc5d63bc0 .part o0000023dc5d66fc8, 2, 1;
+L_0000023dc5d639e0 .concat8 [ 1 1 1 1], L_0000023dc5d1bb90, L_0000023dc5d17000, L_0000023dc5d645b0, L_0000023dc5dab6a0;
+L_0000023dc5d63c60 .part o0000023dc5d66fc8, 3, 1;
+L_0000023dc5d63620 .part L_0000023dc5df4200, 4, 1;
+L_0000023dc5d63d00 .part L_0000023dc5df4200, 0, 4;
+L_0000023dc5d63da0 .concat [ 4 1 0 0], o0000023dc5d66f98, L_0000023dc5dab848;
+L_0000023dc5d63ee0 .concat [ 4 1 0 0], L_0000023dc5d639e0, L_0000023dc5dab890;
+L_0000023dc5d64020 .arith/sum 5, L_0000023dc5d63da0, L_0000023dc5d63ee0;
+L_0000023dc5df5560 .concat [ 1 4 0 0], o0000023dc5d67088, L_0000023dc5dab8d8;
+L_0000023dc5df4200 .arith/sum 5, L_0000023dc5d64020, L_0000023dc5df5560;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "sumador_restador.v";
