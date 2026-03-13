@@ -1,8 +1,18 @@
-**** module/scope: sumador_restador
+**** module/scope: SUMADORRESTADOR
      Flip-Flops   : 0
-     Logic Gates  : 24
-     ADDER[5]: 2 units
+     Logic Gates  : 4
+**** module/scope: SUMADORRESTADOR.bit0
+     Flip-Flops   : 0
+     Logic Gates  : 6
+**** module/scope: SUMADORRESTADOR.bit1
+     Flip-Flops   : 0
+     Logic Gates  : 6
+**** module/scope: SUMADORRESTADOR.bit2
+     Flip-Flops   : 0
+     Logic Gates  : 6
+**** module/scope: SUMADORRESTADOR.bit3
+     Flip-Flops   : 0
+     Logic Gates  : 6
 **** TOTALS
      Flip-Flops   : 0
-     Logic Gates  : 24
-     ADDER[5]: 2 units
+     Logic Gates  : 28
