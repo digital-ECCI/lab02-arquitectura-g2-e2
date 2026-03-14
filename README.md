@@ -94,7 +94,7 @@ Queremos agradecer primero que nada al profesor Jhon por explicarnos los temas d
 También le agradecemos a la universidad por prestarnos las tarjetas DE10-Lite y las computadoras con el Quartus, ya que sin ese hardware no habríamos podido pasar de la teoría a ver el sumador funcionando en la vida real. Por último, gracias a los compañeros que nos dieron una mano cuando el código Verilog no quería compilar o cuando teníamos errores en la asignación de los pines.
 
 ## X REFERENCIAS
-- [1] Universidad ECCI, "Guía de Laboratorio 01: Sumador de 1 bit y sumador de 4 bits," Bogotá D.C., Colombia, 2026.
+- [1] Universidad ECCI, "Guía de Laboratorio 02" Bogotá D.C., Colombia, 2026.
 - [2] Terasic Inc., "DE10-Lite User Manual," [En línea]. Disponible en: https://www.terasic.com.tw/. Accedido: 11 de marzo de 2026.
 - [3] IEEE Computer Society, "IEEE Standard for Verilog Hardware 
 
